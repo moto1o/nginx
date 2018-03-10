@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+
+### NGINX Server Container ##################################
+
+    nginx-rtmp:
+      build:
+        context: ./nginx-rtmp
+      # ports:
+      #   - "80:80"
+      #   - "443:443"
+      #   - "1935:1935"
+
+### NGINX Server Container ##################################
+
+    nginx-rtmp-dev:
+      build:
+        context: ./nginx-rtmp-dev
+      # ports:
+      #   - "80:80"
+      #   - "443:443"
+      #   - "1935:1935"
+
